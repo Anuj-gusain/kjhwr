@@ -167,8 +167,6 @@ All 12 test cases verify status, date availability, half-hourly resolution, hour
 ---
 
 ## 5. Deployment Information
-
-- **Sample Deployment Link:** [https://grid-uk-wind-analytics.vercel.app](https://grid-uk-wind-analytics.vercel.app) *(or Heroku deployment)*
 - **API Swagger Documentation:** `http://localhost:8000/docs`
 - **Database Status Endpoint:** `http://localhost:8000/api/data/status`
 
