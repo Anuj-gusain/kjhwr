@@ -1,0 +1,12 @@
+services:
+  uk-wind-analytics:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: uk_wind_dayahead_desk
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
