@@ -8,7 +8,8 @@ import {
   BarChart2, 
   ArrowRight,
   Flame,
-  CheckCircle2
+  CheckCircle2,
+  Sliders
 } from 'lucide-react';
 import { 
   AreaChart, 

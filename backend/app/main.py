@@ -1,4 +1,14 @@
 import os
+import sys
+
+# Ensure both backend and project root are always in sys.path regardless of CWD
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__)) # app
+BACKEND_DIR = os.path.dirname(CURRENT_DIR)               # backend
+PROJECT_ROOT = os.path.dirname(BACKEND_DIR)              # Grid
+for p in [PROJECT_ROOT, BACKEND_DIR]:
+    if p not in sys.path:
+        sys.path.insert(0, p)
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from backend.app.routers import dayahead, analytics, data
